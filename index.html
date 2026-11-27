@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#1a0614">
+  <title>Pedido de Namoro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fontes carregam em segundo plano, sem travar a abertura da página -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600;700&display=swap"
+    rel="stylesheet" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Cenário -->
+  <div class="ceu" aria-hidden="true">
+    <div class="estrelas"></div>
+    <div class="lua"></div>
+    <div class="brilho"></div>
+  </div>
+
+  <main class="painel" id="painel">
+    <div class="tela tela-inicio" id="telaInicio">
+      <h1>Boa Noite Ketlyn</h1>
+
+
+
+      <h2>Aperta nesse botão por favor</h2>
+
+      <button onclick="sim()" id="sim" type="button">Aquiiii</button>
+    </div>
+
+    <div class="tela tela-mensagem" id="telaMensagem" aria-live="polite">
+      <p class="mensagem" id="mensagem">Tive que fazer isso kkkkkkkkkkkkkkkkkkkkkk</p>
+
+      <button class="presente" id="presente" type="button" onclick="abrirSurpresa()">
+        <span class="presente-icone" aria-hidden="true">
+          <span class="laco"></span>
+          <span class="tampa"></span>
+          <span class="caixa"></span>
+        </span>
+        <span class="presente-texto">Ver surpresa</span>
+      </button>
+    </div>
+  </main>
+
+  <!-- Vídeo da surpresa -->
+  <div class="cinema" id="cinema" aria-hidden="true">
+    <video id="video" src="videoclip.mp4" playsinline controls preload="none"></video>
+    <button class="fechar" type="button" onclick="fecharVideo()" aria-label="Fechar vídeo">✕</button>
+  </div>
+</body>
+
+</html>
